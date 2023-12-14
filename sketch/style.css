@@ -1,0 +1,125 @@
+@import url("./bootstrap-icons-1.11.2/font/bootstrap-icons.min.css");
+
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scrollarea-x {
+  overflow-x: scroll;
+  width: 20vw;
+  z-index: 100;
+}
+
+.scrollarea-y {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.prompt-item-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* modified from https://two-wrongs.com/draw-a-tree-structure-with-only-css.html */
+.version-tree {
+  padding-left: 1em;
+}
+
+.version-tree,
+.version-tree ul,
+.version-tree li {
+  position: relative;
+  line-height: 3em;
+  white-space: nowrap;
+}
+
+.version-tree ul {
+  list-style: none;
+  padding-left: 1.5em;
+  /* 32px */
+}
+
+.version-tree li::before,
+.version-tree li::after {
+  content: "";
+  position: absolute;
+  left: -1em;
+  /* 16px */
+}
+
+.version-tree li::before {
+  border-top: 0.2em solid #6ea8fe;
+  border-radius: 2em;
+  top: 1.5em;
+  width: 1em;
+  height: 0;
+  z-index: 0;
+}
+
+.version-tree li::after {
+  border-left: 0.2em solid #6ea8fe;
+  height: calc(100% + 2em);
+  width: 0px;
+  top: -0.4em;
+}
+
+.version-tree ul>li:last-child::after {
+  height: 0.5em;
+}
+
+.version-select-a {
+  background-color: #fd7e14;
+  color: white;
+}
+
+.version-select-b {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.version-item {
+  color: rgba(255, 255, 255, 0);
+}
+
+.version-item:hover {
+  color: #777;
+}
+
+.version-item i {
+  cursor: pointer;
+}
+
+.version-item .bi-pencil:hover {
+  color: #0dcaf0
+}
+
+.version-item .bi-hand-thumbs-down:hover,
+.version-item .version-thumbs-down {
+  color: #6f42c1
+}
+
+.version-item .bi-hand-thumbs-up:hover,
+.version-item .version-thumbs-up {
+  color: #ffc107
+}
+
+.version-item .bi-trash:hover {
+  color: #dc3545
+}
+
+.response-item {
+  max-height: 15vh;
+  overflow-y: scroll;
+}
+
+.response-a>li {
+  background-color: #ffe5d0;
+}
+
+.response-b>li {
+  background-color: #e2d9f3;
+}

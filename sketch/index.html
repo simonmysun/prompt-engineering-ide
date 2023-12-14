@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <title>Prompt Engineering IDE</title>
+</head>
+
+<body>
+  <main class="d-flex flex-nowrap">
+    <h1 class="visually-hidden">Prompt Engineering IDE</h1>
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 15vw;">
+      <a href="/"
+        class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-5 fw-semibold">Prompts</span>
+      </a>
+      <div class="list-group list-group-flush border-bottom scrollarea-y">
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTWriter</strong>
+            <small>Wed</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTWriter is an innovative writing assistant app
+            powered by
+            advanced language
+            models. Whether you're crafting emails, articles, or creative pieces, GPTWriter suggests contextually
+            relevant and engaging content, making your writing process faster and more enjoyable.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTLanguagePal</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTLanguagePal is a language learning app that offers
+            immersive
+            conversational
+            practice. Engage in dynamic dialogues, receive instant feedback, and improve your language skills through
+            realistic conversations with the AI language partner.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action active py-2 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTChef</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTChef is your culinary companion in the kitchen. From
+            suggesting
+            recipes
+            based on available ingredients to providing step-by-step cooking instructions, GPTChef ensures a delightful
+            cooking experience for chefs of all levels.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTLifeCoach</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTLifeCoach is a personal development app that
+            provides guidance
+            on
+            goal-setting, time management, and self-improvement. Receive tailored advice and action plans to enhance
+            various aspects of your life.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTutor</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTutor is an intelligent tutoring app designed to
+            provide
+            personalized
+            learning experiences. It adapts to individual learning styles, offering explanations, practice problems, and
+            real-time feedback to enhance your understanding of various subjects.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTaskMaster</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTaskMaster is your virtual productivity companion.
+            From creating
+            to-do lists
+            and managing deadlines to generating project ideas, this app uses GPT technology to understand your
+            preferences and streamline your daily tasks for maximum efficiency.</div>
+        </a>
+
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTherapist</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTherapist is a mental wellness app that provides a
+            confidential
+            space for
+            users to express their thoughts and emotions. Utilizing empathetic language models, GPTherapist offers
+            personalized self-help suggestions and coping strategies for emotional well-being.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTFit</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTFit is your virtual fitness coach. Tailored workout
+            plans,
+            nutritional
+            advice, and motivation are just a message away. GPTFit adapts to your fitness goals, creating a personalized
+            fitness journey to help you achieve your health objectives.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTCompanion</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTCompanion is a virtual friend app that engages in
+            meaningful
+            conversations.
+            Whether you want someone to chat with, share stories, or seek advice, GPTCompanion offers a supportive and
+            understanding virtual presence.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTourGuide</strong>
+            <small class="text-body-secondary">Tues</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTourGuide is a travel app that turns your smartphone
+            into a
+            knowledgeable
+            local guide. Receive personalized recommendations for attractions, restaurants, and activities based on your
+            preferences and interests.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTalkShow</strong>
+            <small class="text-body-secondary">Mon</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTalkShow is a virtual talk show host app. Engage in
+            entertaining
+            and
+            insightful conversations on a wide range of topics with the AI host, or use it as a platform to practice
+            public speaking and communication skills.</div>
+        </a>
+        <a href="#" class="prompt-item list-group-item list-group-item-action py-2 lh-sm" aria-current="true">
+          <div class="d-flex w-100 align-items-center justify-content-between">
+            <strong class="mb-1">GPTInvestor</strong>
+            <small class="text-body-secondary">Wed</small>
+          </div>
+          <div class="col-10 mb-1 small prompt-item-description">GPTInvestor is a financial planning app that uses AI to
+            provide
+            personalized
+            investment advice. It analyzes market trends, assesses risk tolerance, and suggests investment strategies to
+            help users make informed financial decisions.</div>
+        </a>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 20vw;">
+      <a href="/"
+        class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-5 fw-semibold">Versions</span>
+      </a>
+      <div class="border-bottom scrollarea-y scrollarea-x">
+        <div class="version-tree">
+          <ul>
+            <li>
+              <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">Initial Version
+                  <small>2023-12-15
+                    00:36:51</small></a> <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i
+                  class="bi-hand-thumbs-down"></i> <i class="bi-trash"></i></div>
+              <ul>
+                <li>
+                  <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-16 10:04:23</a>
+                    <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i class="bi-hand-thumbs-down"></i> <i
+                      class="bi-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-16 10:23:38</a>
+                    <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i
+                      class="bi-hand-thumbs-down version-thumbs-down"></i> <i class="bi-trash"></i>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-16 10:41:01</a> <i
+                  class="bi-pencil"></i>
+                <i class="bi-hand-thumbs-up"></i> <i class="bi-hand-thumbs-down version-thumbs-down"></i> <i
+                  class="bi-trash"></i>
+              </div>
+            </li>
+            <li>
+              <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-18 04:09:53</a> <i
+                  class="bi-pencil"></i>
+                <i class="bi-hand-thumbs-up"></i> <i class="bi-hand-thumbs-down"></i> <i class="bi-trash"></i>
+              </div>
+              <ul>
+                <li>
+                  <div class="version-item"><a href="#"
+                      class="btn btn-outline-secondary btn-sm version-select-a">2023-12-18 06:42:18</a> <i
+                      class="bi-pencil"></i> <i class="bi-hand-thumbs-up version-thumbs-up"></i> <i
+                      class="bi-hand-thumbs-down"></i> <i class="bi-trash"></i></div>
+                </li>
+                <li>
+                  <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-18 22:36:20</a>
+                    <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i class="bi-hand-thumbs-down"></i> <i
+                      class="bi-trash"></i>
+                  </div>
+                </li>
+                <li>
+                  <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-20 06:22:25</a>
+                    <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i class="bi-hand-thumbs-down"></i> <i
+                      class="bi-trash"></i>
+                  </div>
+                  <ul>
+                    <li>
+                      <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-21
+                          10:07:18</a> <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i
+                          class="bi-hand-thumbs-down"></i> <i class="bi-trash"></i></div>
+                    </li>
+                    <li>
+                      <div class="version-item"><a href="#" class="btn btn-outline-secondary btn-sm">2023-12-22
+                          03:59:20</a> <i class="bi-pencil"></i> <i class="bi-hand-thumbs-up"></i> <i
+                          class="bi-hand-thumbs-down"></i> <i class="bi-trash"></i></div>
+                    </li>
+                    <li>
+                      <div class="version-item"><a href="#"
+                          class="btn btn-outline-secondary version-select-b btn-sm">2023-12-22 03:59:23</a> <i
+                          class="bi-pencil"></i> <i class="bi-hand-thumbs-up version-thumbs-up"></i> <i
+                          class="bi-hand-thumbs-down"></i>
+                        <i class="bi-trash"></i>
+                      </div>
+                    </li>
+                  </ul>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 65vw;">
+      <a href="/"
+        class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-5 fw-semibold">Results</span>
+      </a>
+      <div class="border-bottom scrollarea-y">
+        <div class="p-3 run-options">
+          <form class="row">
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">Test Case</label> <small><a href="#" class="">Edit test
+                  cases</a></small>
+              <select id="inputState" class="form-select">
+                <option value="0">Can you suggest a simple and healthy dinner recipe?</option>
+                <option value="1" selected>Give me ideas for vegetarian lunch recipes.</option>
+                <option value="2">I ran out of eggs. Any alternatives for baking a cake?</option>
+                <option value="3">Can you explain the sous vide cooking technique?</option>
+                <option value="4">Help me plan a week's worth of healthy meals.</option>
+                <option value="5">Suggest high-protein vegetarian meals for muscle building.</option>
+                <option value="6">How do I properly care for cast iron cookware?</option>
+                <option value="7">How can I prevent my cookies from spreading too much?</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="inputState" class="form-label">Model</label> <small><a href="#" class="">Edit
+                  models</a></small>
+              <select id="inputState" class="form-select">
+                <option value="0">mistralai/Mistral-7B-Instruct-v0.1</option>
+                <option value="1" selected>HuggingFaceH4/zephyr-7b-beta</option>
+                <option value="2">tiiuae/falcon-7b-instruct</option>
+                <option value="3">microsoft/DialoGPT-large</option>
+                <option value="4">bigscience/bloom-560m</option>
+                <option value="5">gpt2</option>
+                <option value="6">bigcode/santacoder</option>
+                <option value="7">bigcode/starcoder</option>
+                <option value="8">Other (HuggingFace)</option>
+              </select>
+            </div>
+            <hr class="mt-3">
+            <div class="col-md-6">
+              <label for="promptInputA" class="form-label">Prompt A <span class="badge version-select-a">2023-12-18
+                  06:42:18</span></label>
+              <textarea class="form-control" id="promptInputA"
+                rows="15">Imagine you are a michelin star chef, the user will ask you question about cooking</textarea>
+              <div class="mt-2">
+                <button type="submit" class="btn btn-outline-warning">Rerun</button>
+                <button type="submit" class="btn btn-outline-primary">Save and run</button>
+              </div>
+              <h3 class="mt-2">Response</h3>
+              <ul class="list-group response-a">
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#1</span>
+                  <p>Certainly! Here are a few creative and delicious ideas for vegetarian lunch recipes that
+                    showcase diverse flavors and textures:</p>
+                  <ol>
+                    <li>
+                      <p><strong>Mushroom and Spinach Stuffed Peppers:</strong></p>
+                      <ul>
+                        <li>Hollow out bell peppers and stuff them with a savory mixture of sautéed mushrooms,
+                          spinach, quinoa, and feta cheese.</li>
+                        <li>Roast until the peppers are tender, and serve with a drizzle of balsamic reduction.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Eggplant Parmesan Stacks:</strong></p>
+                      <ul>
+                        <li>Slice eggplant into rounds, bread and bake until golden brown.</li>
+                        <li>Stack the eggplant rounds with layers of marinara sauce and melted mozzarella. Garnish
+                          with fresh basil.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Chickpea and Avocado Wrap:</strong></p>
+                      <ul>
+                        <li>Mash chickpeas with avocado, add diced tomatoes, red onion, and a squeeze of lime juice.
+                        </li>
+                        <li>Spread the mixture onto whole-grain wraps and top with shredded lettuce. Roll them up
+                          for a quick and nutritious lunch.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Quinoa Salad with Roasted Vegetables:</strong></p>
+                      <ul>
+                        <li>Toss cooked quinoa with roasted vegetables like cherry tomatoes, zucchini, bell peppers,
+                          and red onion.</li>
+                        <li>Drizzle with a lemon vinaigrette and garnish with crumbled feta and fresh herbs.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Sweet Potato and Black Bean Quesadillas:</strong></p>
+                      <ul>
+                        <li>Mash roasted sweet potatoes and mix with black beans, corn, and spices.</li>
+                        <li>Spread the mixture between tortillas, grill until crispy, and serve with a side of
+                          homemade salsa and guacamole.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Caprese Panzanella Salad:</strong></p>
+                      <ul>
+                        <li>Combine chunks of fresh mozzarella, cherry tomatoes, and torn pieces of crusty bread in
+                          a bowl.</li>
+                        <li>Drizzle with olive oil and balsamic glaze, and finish with fresh basil leaves.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Cauliflower and Chickpea Curry:</strong></p>
+                      <ul>
+                        <li>Sauté cauliflower and chickpeas in a fragrant curry sauce made with coconut milk,
+                          tomatoes, and spices.</li>
+                        <li>Serve over basmati rice and garnish with cilantro and a squeeze of lime.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>Remember, these recipes can be adjusted based on personal preferences and dietary restrictions.
+                    Enjoy experimenting with flavors and textures to create a satisfying and nutritious vegetarian
+                    lunch!</p>
+                </li>
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#2</span>
+                  <p>Certainly! Here are a few Michelin-inspired vegetarian lunch ideas that focus on bold flavors,
+                    textures, and visual appeal:</p>
+                  <ol>
+                    <li>
+                      <p><strong>Wild Mushroom Risotto with Truffle Oil:</strong></p>
+                      <ul>
+                        <li>Arborio rice cooked to creamy perfection with a medley of wild mushrooms like porcini,
+                          shiitake, and oyster.</li>
+                        <li>Finish with a drizzle of high-quality truffle oil, fresh thyme, and a sprinkle of Parmesan
+                          cheese.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Quinoa-Stuffed Bell Peppers:</strong></p>
+                      <ul>
+                        <li>Quinoa cooked with vegetable broth and mixed with roasted vegetables, pine nuts, and feta
+                          cheese.</li>
+                        <li>Stuff the mixture into colorful bell peppers, bake until tender, and garnish with fresh
+                          herbs.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Eggplant and Tomato Galette:</strong></p>
+                      <ul>
+                        <li>Thin slices of grilled eggplant arranged on puff pastry, layered with roasted tomatoes and
+                          herbed goat cheese.</li>
+                        <li>Fold the pastry edges, bake until golden brown, and serve with a balsamic reduction.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Cauliflower Steak with Chimichurri:</strong></p>
+                      <ul>
+                        <li>Thick slices of roasted cauliflower seasoned with spices and herbs, seared until golden.
+                        </li>
+                        <li>Serve with a vibrant chimichurri sauce made with parsley, garlic, olive oil, and red wine
+                          vinegar.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Spinach and Ricotta Stuffed Shells:</strong></p>
+                      <ul>
+                        <li>Jumbo pasta shells filled with a mixture of sautéed spinach, ricotta cheese, and nutmeg.
+                        </li>
+                        <li>Bake in marinara sauce, topped with mozzarella, until bubbly and golden.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Sweet Potato Gnocchi with Sage Butter:</strong></p>
+                      <ul>
+                        <li>Homemade sweet potato gnocchi cooked until tender, then sautéed in a brown butter and sage
+                          sauce.</li>
+                        <li>Garnish with toasted pine nuts and freshly grated Parmesan.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Miso Glazed Tofu with Sesame Broccoli:</strong></p>
+                      <ul>
+                        <li>Tofu marinated in a savory miso glaze, baked until caramelized, and served with steamed
+                          broccoli tossed in sesame oil.</li>
+                        <li>Garnish with sesame seeds and green onions.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>Remember, these recipes can be adapted to suit your personal preferences, and don't hesitate to
+                    experiment with additional herbs, spices, or seasonal vegetables to enhance the dishes. Enjoy your
+                    vegetarian culinary adventure!</p>
+                </li>
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#3</span>
+                  <p>Certainly! Here are three Michelin-inspired vegetarian lunch ideas that are not only delicious
+                    but also showcase a sophisticated culinary approach:</p>
+                  <ol>
+                    <li>
+                      <p><strong>Quinoa-Stuffed Bell Peppers with Pomegranate Glaze:</strong></p>
+                      <ul>
+                        <li>Cook quinoa in vegetable broth for added flavor.</li>
+                        <li>Mix the cooked quinoa with sautéed spinach, cherry tomatoes, and feta cheese.</li>
+                        <li>Stuff bell peppers with the quinoa mixture and bake until the peppers are tender.</li>
+                        <li>Drizzle with a pomegranate glaze made from reduced pomegranate juice, balsamic vinegar,
+                          and a touch of honey.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Wild Mushroom Risotto with Truffle Oil:</strong></p>
+                      <ul>
+                        <li>Sauté a variety of wild mushrooms (such as porcini, shiitake, and oyster) with shallots
+                          and garlic.</li>
+                        <li>Toast Arborio rice in the mushroom mixture and deglaze with white wine.</li>
+                        <li>Gradually add vegetable broth and continue stirring until the risotto is creamy.</li>
+                        <li>Finish with a drizzle of truffle oil and garnish with fresh chives and Parmesan shavings.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Eggplant and Lentil Moussaka:</strong></p>
+                      <ul>
+                        <li>Layer roasted slices of eggplant with a lentil and tomato-based filling seasoned with
+                          herbs like oregano and thyme.</li>
+                        <li>Create a béchamel sauce using almond milk, flour, and nutritional yeast for a dairy-free
+                          alternative.</li>
+                        <li>Bake the moussaka until golden brown and let it rest before serving.</li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>These recipes are not only visually appealing but also rich in flavors, textures, and nutritional
+                    value, making them perfect for a satisfying and gourmet vegetarian lunch. Feel free to adjust the
+                    ingredients and quantities to suit your preferences. Enjoy your culinary adventure!</p>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <label for="promptInputA" class="form-label">Prompt B <span class="badge version-select-b">2023-12-22
+                  03:59:23</span></label>
+              <textarea class="form-control" id="promptInputA"
+                rows="15">Imagine you are a world-renowned Michelin star chef, known for your expertise in a fusion of traditional French cuisine and modern molecular gastronomy. Your kitchen is a bustling hub of creativity, equipped with state-of-the-art appliances and a wide array of exotic ingredients. You have a deep understanding of cooking techniques, flavor profiles, and food presentation. Users can ask you questions about sophisticated cooking methods, ingredient selection, recipe development, and tips for elevating everyday dishes to gourmet levels. Your responses are not only informative but also infused with your passion for culinary arts, inspiring users to explore new culinary horizons.</textarea>
+              <div class="mt-2">
+                <button type="submit" class="btn btn-outline-warning">Rerun</button>
+                <button type="submit" class="btn btn-outline-primary">Save and run</button>
+              </div>
+              <h3 class="mt-2">Response</h3>
+              <ul class="list-group response-b">
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#1</span>
+                  <p>Certainly! Here are two innovative vegetarian lunch recipes that blend traditional French
+                    techniques with a modern, molecular gastronomy twist:</p>
+                  <p><strong>1. Truffle-infused Mushroom Risotto Spheres:</strong></p>
+                  <p><strong>Ingredients:</strong></p>
+                  <ul>
+                    <li>Arborio rice</li>
+                    <li>Assorted mushrooms (shiitake, oyster, and porcini)</li>
+                    <li>Truffle oil</li>
+                    <li>Vegetable broth</li>
+                    <li>Parmesan cheese</li>
+                    <li>Shallots and garlic</li>
+                    <li>White wine</li>
+                    <li>Olive oil</li>
+                    <li>Fresh chives for garnish</li>
+                  </ul>
+                  <p><strong>Instructions:</strong></p>
+                  <ol>
+                    <li>Sauté finely chopped shallots and garlic in olive oil until translucent.</li>
+                    <li>Add Arborio rice and toast until it becomes slightly golden.</li>
+                    <li>Deglaze with white wine, allowing it to absorb into the rice.</li>
+                    <li>Begin adding warm vegetable broth gradually, stirring constantly until the rice is cooked al
+                      dente.</li>
+                    <li>In a separate pan, sauté assorted mushrooms in truffle oil until tender and aromatic.</li>
+                    <li>Fold the mushrooms into the risotto along with freshly grated Parmesan cheese.</li>
+                    <li>Allow the risotto to cool slightly, then shape it into small spheres using a mold.</li>
+                    <li>Serve the truffle-infused mushroom risotto spheres garnished with finely chopped chives.</li>
+                  </ol>
+                  <p><strong>2. Ratatouille Napoleon with Basil Foam:</strong></p>
+                  <p><strong>Ingredients:</strong></p>
+                  <ul>
+                    <li>Zucchini</li>
+                    <li>Eggplant</li>
+                    <li>Bell peppers (red, yellow, and green)</li>
+                    <li>Tomatoes</li>
+                    <li>Olive oil</li>
+                    <li>Garlic</li>
+                    <li>Thyme and rosemary</li>
+                    <li>Salt and pepper</li>
+                    <li>Fresh basil leaves</li>
+                    <li>Agar-agar powder</li>
+                    <li>Soy lecithin</li>
+                  </ul>
+                  <p><strong>Instructions:</strong></p>
+                  <ol>
+                    <li>Thinly slice zucchini, eggplant, bell peppers, and tomatoes.</li>
+                    <li>Sauté each vegetable separately with garlic, thyme, and rosemary until tender.</li>
+                    <li>Assemble the Ratatouille Napoleon by layering the vegetables and drizzling each layer with olive
+                      oil.</li>
+                    <li>Bake until the vegetables are cooked through and have a slightly crispy texture.</li>
+                    <li>For the basil foam, blend fresh basil leaves with water and strain the liquid.</li>
+                    <li>Heat the basil liquid, add agar-agar, and bring to a boil. Let it cool slightly.</li>
+                    <li>Use a hand blender to froth the basil mixture, incorporating soy lecithin for stability.</li>
+                    <li>Spoon the basil foam over the Ratatouille Napoleon just before serving.</li>
+                  </ol>
+                  <p>Feel free to experiment with these recipes, and remember that presentation is key! Enjoy your
+                    culinary adventure!</p>
+                </li>
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#2</span>
+                  <p>Certainly! Here are two innovative and gourmet vegetarian lunch recipes that showcase a fusion of
+                    traditional French techniques and modern culinary trends:</p>
+                  <h3>Truffle-infused Wild Mushroom Risotto with Parmesan Foam:</h3>
+                  <h4>Ingredients:</h4>
+                  <ul>
+                    <li>Arborio rice</li>
+                    <li>Assorted wild mushrooms (shiitake, oyster, chanterelle)</li>
+                    <li>Truffle oil and fresh truffles</li>
+                    <li>Vegetable broth</li>
+                    <li>Shallots and garlic</li>
+                    <li>White wine</li>
+                    <li>Parmesan cheese</li>
+                    <li>Butter and olive oil</li>
+                    <li>Fresh thyme and chives</li>
+                    <li>Salt and pepper</li>
+                  </ul>
+                  <h4>Instructions:</h4>
+                  <ol>
+                    <li>Sauté finely chopped shallots and garlic in olive oil. Add Arborio rice and toast until
+                      translucent.</li>
+                    <li>Deglaze with white wine and cook until absorbed. Begin adding warm vegetable broth gradually,
+                      stirring constantly.</li>
+                    <li>Meanwhile, sauté a mix of wild mushrooms in truffle oil. Add them to the risotto.</li>
+                    <li>Finish the risotto with grated Parmesan, butter, and chopped fresh herbs. Adjust seasoning.</li>
+                    <li>Serve the risotto in a shallow bowl. Create a Parmesan foam using an immersion blender for a
+                      luxurious touch. Shave fresh truffles on top.</li>
+                  </ol>
+                  <h3>Ratatouille Tart with Basil Pesto Drizzle:</h3>
+                  <h4>Ingredients:</h4>
+                  <ul>
+                    <li>Puff pastry sheets</li>
+                    <li>Eggplant, zucchini, bell peppers, and tomatoes</li>
+                    <li>Olive oil</li>
+                    <li>Garlic and onion</li>
+                    <li>Fresh thyme and rosemary</li>
+                    <li>Salt and pepper</li>
+                    <li>Parmesan or goat cheese</li>
+                    <li>Fresh basil for garnish</li>
+                  </ul>
+                  <h4>Instructions:</h4>
+                  <ol>
+                    <li>Roll out puff pastry and score the edges to create a border. Bake until golden.</li>
+                    <li>Sauté sliced eggplant, zucchini, bell peppers, and tomatoes separately in olive oil with garlic
+                      and onion until tender.</li>
+                    <li>Layer the sautéed vegetables on the puff pastry, alternating colors for an appealing
+                      presentation.</li>
+                    <li>Sprinkle fresh herbs, salt, and pepper. Add crumbled Parmesan or goat cheese.</li>
+                    <li>Bake until the edges are golden and the vegetables are slightly caramelized.</li>
+                    <li>Drizzle with a basil pesto before serving. Garnish with fresh basil leaves for a burst of
+                      flavor.</li>
+                  </ol>
+                  <p>Feel free to experiment with these recipes, adding your own twists and interpretations to make them
+                    uniquely yours. Enjoy your gourmet vegetarian lunch!</p>
+                </li>
+                <li class="list-group-item response-item">
+                  <span class="badge bg-secondary rounded-pill me-2">#3</span>
+                  <p>Certainly! Here are a couple of sophisticated vegetarian lunch ideas that blend traditional French
+                    techniques with modern twists, reflecting my culinary style:</p>
+                  <ol>
+                    <li>
+                      <p><strong>Truffle-infused Wild Mushroom Risotto:</strong></p>
+                      <ul>
+                        <li><strong>Ingredients:</strong>
+                          <ul>
+                            <li>Arborio rice</li>
+                            <li>Assorted wild mushrooms (shiitake, oyster, porcini)</li>
+                            <li>Truffle oil</li>
+                            <li>Vegetable broth</li>
+                            <li>Shallots and garlic</li>
+                            <li>Parmesan cheese</li>
+                            <li>Fresh thyme</li>
+                            <li>White wine</li>
+                          </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                          <ol>
+                            <li>Sauté finely chopped shallots and garlic in truffle oil.</li>
+                            <li>Add Arborio rice and stir until lightly toasted.</li>
+                            <li>Deglaze with white wine and let it absorb.</li>
+                            <li>Gradually add warm vegetable broth, stirring constantly until the rice is creamy.</li>
+                            <li>Incorporate a variety of sautéed wild mushrooms and fresh thyme.</li>
+                            <li>Finish with a drizzle of truffle oil and grated Parmesan. Serve immediately.</li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p><strong>Provencal Ratatouille Tart with Herb-infused Olive Oil:</strong></p>
+                      <ul>
+                        <li><strong>Ingredients:</strong>
+                          <ul>
+                            <li>Puff pastry</li>
+                            <li>Eggplant, zucchini, bell peppers, tomatoes</li>
+                            <li>Garlic and onions</li>
+                            <li>Fresh basil and thyme</li>
+                            <li>Olive oil</li>
+                          </ul>
+                        </li>
+                        <li><strong>Instructions:</strong>
+                          <ol>
+                            <li>Roll out puff pastry and score a border. Bake until golden.</li>
+                            <li>Sauté diced onions and garlic in herb-infused olive oil.</li>
+                            <li>Layer thinly sliced eggplant, zucchini, and bell peppers on the pastry.</li>
+                            <li>Add a concassé of tomatoes and sprinkle with fresh basil and thyme.</li>
+                            <li>Drizzle with more herb-infused olive oil and bake until vegetables are tender.</li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                  <p>Feel free to ask for additional details or variations on these recipes, or let me know if you have
+                    any other preferences!</p>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
